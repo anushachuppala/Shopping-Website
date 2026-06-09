@@ -54,6 +54,14 @@ img {
   padding-top: 4rem;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
+.secondary-bg {
+  background: var(--secondary-clr);
+  padding-block: 2.2rem;
+}
 /* Navbar styling */
 
 header {
@@ -374,4 +382,28 @@ button {
   line-height: 3.5rem;
 }
 
-/* best sale section */
+/* icons section */
+.box {
+  flex: 1;
+  text-align: center;
+  margin-block: 1rem;
+  flex-basis: 200px;
+}
+
+.box .fa-solid {
+  font-size: 1.5rem;
+  color: var(--primary-clr);
+}
+
+h5 a {
+  font-size: 1.1rem;
+  color: var(--light-black);
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.des {
+  color: #6e6e6e;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
