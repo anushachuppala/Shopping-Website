@@ -408,7 +408,6 @@ h5 a {
   font-weight: 500;
 }
 
-/* <!-- new latest section--> */
 /* New Latest Section */
 .blog-container {
   margin-top: 3rem;
@@ -419,6 +418,7 @@ h5 a {
   flex: 1;
   position: relative;
   overflow: hidden;
+  flex-basis: 300px;
 }
 
 .blog-box img {
@@ -435,7 +435,6 @@ h5 a {
   width: 0;
   height: 100%;
   z-index: 3;
-  padding-inline: 2rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -486,3 +485,5 @@ h5 a {
   opacity: 1;
   visibility: visible;
 }
+
+/* media section */
