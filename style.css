@@ -521,4 +521,40 @@ form h3 {
   color: var(--light-black);
 }
 
-/* footer section */
+/* /* footer section  */
+
+.footer-container {
+  padding-bottom: 3rem;
+}
+
+.footer-list {
+  flex: 1;
+  padding-block: 1rem;
+  flex-basis: 200px;
+}
+
+.footer-link {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--light-black);
+  line-height: 2.25rem;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+}
+
+.detail {
+  font-size: 0.95rem;
+  line-height: 1.75rem;
+  color: #6e6e6e;
+}
+
+.footer-bottom {
+  padding-block: 0.85rem;
+  text-align: center;
+  color: #6e6e6e;
+  border-top: 0.065rem solid #ebebeb;
+  font-size: 0.9rem;
+}
