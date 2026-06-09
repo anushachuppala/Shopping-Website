@@ -487,3 +487,36 @@ h5 a {
 }
 
 /* media section */
+
+form {
+  gap: 3rem;
+}
+form h3 {
+  font-size: 1.4rem;
+}
+
+.input-container {
+  flex: 1;
+  align-items: stretch;
+}
+
+#email {
+  border: none;
+  flex: 1;
+  font-size: 1rem;
+  padding-left: 1.1rem;
+}
+
+#email:focus {
+  outline: fnone;
+}
+
+.social-icons {
+  gap: 1.2rem;
+  justify-content: flex-end;
+}
+
+.media {
+  font-size: 1.2rem;
+  color: var(--light-black);
+}
