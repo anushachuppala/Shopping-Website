@@ -580,17 +580,22 @@ form h3 {
     background: var(--black-clr);
     padding: 2rem;
     transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
   }
 
   .navlist-active {
     transform: translateY(20%);
   }
 
-  .navlist a {
+  .navlist .link {
     color: var(--secondary-clr);
+    font-weight: 400;
   }
 
-  .nav-icons a {
+  .nav-icons a,
+  .link:hover,
+  .navlist,
+  .link-active {
     color: var(--primary-clr);
   }
 
@@ -644,5 +649,18 @@ form h3 {
 
   .hero-content > div {
     transform: translateX(49px);
+  }
+
+  .footer-container,
+  .footer-conatiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-list {
+    width: 100%;
+    text-align: center;
   }
 }
