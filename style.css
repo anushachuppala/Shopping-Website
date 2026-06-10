@@ -131,9 +131,10 @@ span,
 }
 
 /* sections styling */
+/* hero section */
 .hero {
   position: relative;
-  margin-top: 6.5rem;
+  margin-top: 2.5rem;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -566,110 +567,62 @@ form h3 {
   font-size: 0.9rem;
 }
 
-/* ==========================================
-   MOBILE RESPONSIVE FIXES
-   320px - 768px ONLY
-   ========================================== */
+/*MOBILE RESPONSIVE FIXES*/
 
-@media screen and (max-width: 768px) {
-  /* Remove horizontal scrolling */
-  html,
-  body {
-    overflow-x: hidden;
+@media screen and (max-width: 700px) {
+  .navlist {
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--black-clr);
+    padding: 2rem;
+    transform: translateY(-100%);
   }
 
-  /* Better mobile container */
-  .container {
-    max-width: 92%;
+  .navlist-active {
+    transform: translateY(20%);
   }
 
-  /* Responsive images */
-  img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+  .navlist a {
+    color: var(--secondary-clr);
   }
 
-  /* ======================
-     NAVBAR
-     ====================== */
+  .nav-icons a {
+    color: var(--primary-clr);
+  }
 
   .hamburger {
     display: block;
   }
 
-  .navbar {
-    height: 80px;
+  .conatiner {
+    max-width: 95%;
   }
 
-  .navlist {
-    position: fixed;
-    top: 80px;
-    left: -100%;
-    width: 100%;
-    background: var(--white-clr);
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem 0;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  .hero {
+    height: 60vh;
   }
 
-  .navlist.active {
-    left: 0;
+  h3 {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
   }
 
-  .nav-icons {
-    margin-top: 1rem;
+  h1 {
+    font-size: 2.2rem;
+    line-height: 4rem;
   }
 
-  /* ======================
-     HERO SECTION
-     ====================== */
-  @media screen and (max-width: 768px) {
-    .hero {
-      min-height: 80vh;
-    }
-
-    .hero-image {
-      object-fit: cover;
-      object-position: 25% center;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      min-height: 100vh;
-      justify-content: flex-end;
-      padding-top: 40rem;
-      margin-right: 6%;
-      color: var(--white-clr);
-    }
-
-    .hero-content h1 {
-      font-size: 2.2rem;
-      line-height: 2.7rem;
-      color: var(--white-clr);
-    }
-
-    .hero-content h3 {
-      font-size: 1.2rem;
-      color: var(--white-clr);
-    }
-
-    .hero-content h4 {
-      font-size: 1rem;
-      line-height: 1.6rem;
-    }
+  h4 {
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
-
-  /* ======================
-     CATEGORY SECTION
-     ====================== */
 
   .category-container {
     grid-template-columns: 1fr;
-    gap: 1rem;
   }
 
   .category:nth-child(1),
@@ -678,134 +631,18 @@ form h3 {
     grid-row: auto;
   }
 
-  /* ======================
-     PRODUCT CARDS
-     ====================== */
-
-  .card-container {
-    flex-direction: column;
-    margin-top: 2rem;
-  }
-
-  .card {
+  .hero-image {
     width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #efefef;
-    margin-bottom: 1rem;
+    height: 100%;
+    object-position: center center;
   }
 
-  .card-content {
-    padding: 0 1.5rem;
+  .hero,
+  .hero-content {
+    min-height: 70vh;
   }
 
-  /* Make button visible on touch devices */
-  .add-to-cart {
-    position: static;
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-    margin-top: 1rem;
-  }
-
-  /* ======================
-     SALE SECTION
-     ====================== */
-
-  .sale-container {
-    padding: 4rem 1rem;
-  }
-
-  .sale-container h1 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-  }
-
-  .sale-container h3 {
-    font-size: 1.2rem;
-  }
-
-  .sale-container h4 {
-    line-height: 2rem;
-  }
-
-  /* ======================
-     ICONS SECTION
-     ====================== */
-
-  .box {
-    flex: 100%;
-  }
-
-  /* ======================
-     BLOG SECTION
-     ====================== */
-
-  .blog-container {
-    flex-direction: column;
-  }
-
-  .blog-box {
-    width: 100%;
-  }
-
-  .blog-content {
-    left: 50%;
-    width: 85%;
-  }
-
-  .heading {
-    font-size: 1.3rem;
-  }
-
-  /* ======================
-     NEWSLETTER SECTION
-     ====================== */
-
-  form {
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: center;
-  }
-
-  .input-container {
-    width: 100%;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  #email {
-    width: 100%;
-    min-height: 50px;
-    padding: 0 1rem;
-  }
-
-  .input-container button {
-    width: 100%;
-  }
-
-  .social-icons {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  /* ======================
-     FOOTER
-     ====================== */
-
-  .footer-conatiner,
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-list {
-    width: 100%;
-  }
-
-  /* TYPOGRAPHY*/
-
-  h2 {
-    font-size: 1.8rem;
-    line-height: 2.5rem;
+  .hero-content > div {
+    transform: translateX(49px);
   }
 }
